@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layoutRecyclerViewHeight">
+
+    <ImageView
+        android:id="@+id/imgCategoryBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.6"
+        android:foreground="@drawable/bg_image_brown_gradient"
+        android:scaleType="fitXY"/>
+
+    <RelativeLayout
+        android:layout_width="@dimen/layoutTextViewsWidth"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <application.sample.coffeehouse.Font_MontserratSemiBoldTextView
+            android:id="@+id/lblCategoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textSize="@dimen/categoryNameTextSize"/>
+
+        <application.sample.coffeehouse.Font_OpenSansSemiBoldTextView
+            android:id="@+id/lblCategoryHeadline"
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/categoryHeadlineMarginTop"
+            android:textSize="@dimen/categoryHeadlineTextSize"
+            android:layout_below="@+id/lblCategoryName" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/viewHeight"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

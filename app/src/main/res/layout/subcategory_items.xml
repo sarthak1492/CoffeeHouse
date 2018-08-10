@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/recyclerViewItemsMainLayout"
+    android:background="@drawable/product_grid_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <application.sample.coffeehouse.Font_OpenSansSemiBoldTextView
+            android:id="@+id/lblSubCategoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/subcategoryNameMarginLeft"
+            android:layout_marginTop="@dimen/subcategoryNameMarginTop"
+            android:textColor="#1e1e1e"
+            android:textSize="@dimen/categoryHeadingTextSize" />
+
+        <application.sample.coffeehouse.Font_OpenSansRegularTextView
+            android:id="@+id/lblSubCategoryDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblSubCategoryName"
+            android:layout_alignLeft="@id/lblSubCategoryName"
+            android:textSize="@dimen/subcategoryDescriptionTextSize" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/subcategoryImageLayout"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/imgSubCategoryProduct"
+                android:layout_width="@dimen/subcategiryImageWidth"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <application.sample.coffeehouse.Font_MontserratSemiBoldTextView
+            android:id="@+id/lblSubCategoryProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@id/lblSubCategoryName"
+            android:textColor="#008000"
+            android:textSize="@dimen/categoryHeadingTextSize"
+            android:layout_marginBottom="@dimen/subcategoryNameMarginTop"/>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imgLike"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/ic_heart"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignBottom="@id/lblSubCategoryProductPrice"-->
+            <!--android:layout_marginRight="@dimen/subcategoryNameMarginTop"/>-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

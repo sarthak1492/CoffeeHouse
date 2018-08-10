@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="application.sample.coffeehouse.ProductScreenActivity"
+    tools:showIn="@layout/activity_product_screen">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layoutProductImage"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="40%">
+
+        <ImageView
+            android:id="@+id/imgProductImage"
+            app:layout_widthPercent="60%"
+            app:layout_heightPercent="60%"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <application.sample.coffeehouse.Font_OpenSansSemiBoldTextView
+        android:id="@+id/lblProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/subCategoryDescriptionTextSize"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/layoutProductImage"
+        app:layout_marginTopPercent="5%"
+        app:layout_marginLeftPercent="5%"/>
+
+    <application.sample.coffeehouse.Font_MontserratSemiBoldTextView
+        android:id="@+id/lblSubCategoryProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#008000"
+        android:textSize="@dimen/subCategoryDescriptionTextSize"
+        android:layout_alignTop="@+id/lblProductName"
+        android:layout_alignParentRight="true"
+        app:layout_marginRightPercent="5%"/>
+
+    <application.sample.coffeehouse.Font_OpenSansRegularTextView
+        android:id="@+id/lblProductDescription"
+        app:layout_widthPercent="80%"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblProductName"
+        android:layout_alignLeft="@+id/lblProductName"
+        app:layout_marginTopPercent="2%"
+        android:textSize="@dimen/categoryHeadlineTextSize"
+        android:text="@string/productDescription"/>
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layoutButtonsandDropDown"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lblProductDescription"
+        app:layout_marginTopPercent="3%">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layoutDroDowns"
+            android:layout_width="match_parent"
+            app:layout_heightPercent="30%">
+
+            <RelativeLayout
+                android:id="@+id/layoutQuantity"
+                app:layout_widthPercent="50%"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_spinner">
+
+                <Spinner
+                    android:id="@+id/spQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_spinner"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutSize"
+                android:layout_toRightOf="@+id/layoutQuantity"
+                app:layout_widthPercent="50%"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:id="@+id/spSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_spinner"/>
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/black"
+                android:layout_alignParentTop="true"/>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"
+                android:layout_centerInParent="true"/>
+
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/black"
+                android:layout_alignParentBottom="true"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <application.sample.coffeehouse.Font_OpenSansSemiBoldButton
+            android:id="@+id/btnPlaceOrder"
+            app:layout_widthPercent="90%"
+            android:layout_centerHorizontal="true"
+            app:layout_heightPercent="28%"
+            android:background="@drawable/button_bg"
+            android:layout_below="@id/layoutDroDowns"
+            app:layout_marginTopPercent="5%"
+            android:text="Place the Order"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/categoryHeadlineTextSize"
+            android:textAllCaps="false"/>
+
+        <application.sample.coffeehouse.Font_OpenSansSemiBoldButton
+            android:id="@+id/btnAddToFavorites"
+            app:layout_widthPercent="90%"
+            android:layout_centerHorizontal="true"
+            app:layout_heightPercent="28%"
+            android:background="@drawable/bg_sidemenu_logo_text"
+            android:layout_below="@id/btnPlaceOrder"
+            app:layout_marginTopPercent="5%"
+            android:text="Add to favorites"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/categoryHeadlineTextSize"
+            android:textAllCaps="false"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

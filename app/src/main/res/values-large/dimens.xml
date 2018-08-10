@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Splash Screen Activity -->
+    <dimen name="splashTextViewSize">24sp</dimen>
+    <dimen name="splashTextViewPadding">22.5dp</dimen>
+
+    <!-- Welcome Screen Activity -->
+    <dimen name="welcomeTextViewSize">37.5sp</dimen>
+    <dimen name="welcomeTextViewMotoSize">22.5sp</dimen>
+    <dimen name="welcomeButtonSize">25.5sp</dimen>
+
+    <!-- Menu Screen Activity -->
+    <dimen name="menuTextViewSize">30sp</dimen>
+    <dimen name="layoutRecyclerViewHeight">195dp</dimen>
+    <dimen name="layoutTextViewsWidth">300dp</dimen>
+    <dimen name="categoryNameTextSize">34.5sp</dimen>
+    <dimen name="categoryHeadlineTextSize">19.5sp</dimen>
+    <dimen name="viewHeight">3dp</dimen>
+    <dimen name="categoryHeadlineMarginTop">7.5dp</dimen>
+    <dimen name="sideMenuLogoTextWidth">75dp</dimen>
+
+    <!-- Sub category Screen Activity -->
+    <dimen name="recyclerViewItemsMainLayout">300dp</dimen>
+    <dimen name="subcategoryNameMarginLeft">19.5dp</dimen>
+    <dimen name="subcategoryNameMarginTop">15dp</dimen>
+    <dimen name="categoryHeadingTextSize">21sp</dimen>
+    <dimen name="subcategoryDescriptionTextSize">15.6sp</dimen>
+    <dimen name="subcategoryImageLayout">150dp</dimen>
+    <dimen name="subcategiryImageWidth">135dp</dimen>
+    <dimen name="collapsingLayoutImageHeight">337.5dp</dimen>
+    <dimen name="subCategoryDescriptionTextSize">27sp</dimen>
+    <dimen name="subCategorysubHeadlineTextSize">17.25sp</dimen>
+</resources>
