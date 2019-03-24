@@ -62,7 +62,7 @@ public class WelcomeScreenActivity extends AppCompatActivity {
 
     public void fncGetStartedClick(View view){
         if (isNetworkAvailable()) {
-            Intent intent = new Intent(WelcomeScreenActivity.this, MenuScreenActivity.class);
+            Intent intent = new Intent(WelcomeScreenActivity.this, LoginScreenActivity.class);
             startActivity(intent);
             finish();
         }else {

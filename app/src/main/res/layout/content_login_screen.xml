@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LoginScreenActivity"
+    tools:showIn="@layout/activity_login_screen">
+
+    <ImageView
+        android:id="@+id/imgSplashBackground"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:alpha="0.9"
+        android:background="@drawable/loginbg"
+        android:foreground="@drawable/bg_image_brown_gradient"/>
+
+    <application.sample.coffeehouse.Font_MontserratSemiBoldTextView
+        android:id="@+id/lblHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please provide some details"
+        android:textSize="@dimen/loginTextSize"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="3%"/>
+
+    <application.sample.coffeehouse.Font_OpenSansSemiBoldEditText
+        android:id="@+id/txtUserName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="15%"
+        android:hint="Enter name"
+        android:textSize="@dimen/loginTextSize"
+        android:inputType="textCapWords"
+        android:textColor="@android:color/white"
+        android:textColorHint="#6b618a"
+        android:paddingStart="@dimen/indiaFlagPaddingLeft"
+        android:paddingEnd="@dimen/indiaFlagPaddingLeft"
+        android:background="@drawable/bg_edittext_cylinder_shape"
+        />
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layoutMobileNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="3%"
+        android:layout_below="@+id/txtUserName"
+        android:layout_centerHorizontal="true">
+
+        <application.sample.coffeehouse.Font_OpenSansSemiBoldEditText
+            android:id="@+id/txtMobileNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Mobile Number"
+            android:textColorHint="#6b618a"
+            android:inputType="phone"
+            android:digits="0123456789"
+            android:background="@drawable/bg_edittext_cylinder_shape"
+            android:maxLength="10"
+            android:textColor="@android:color/white"
+            android:drawablePadding="@dimen/indiaFlagDrawablePaddingLeft"
+            android:paddingStart="@dimen/indiaFlagPaddingLeft"
+            android:paddingEnd="@dimen/indiaFlagPaddingLeft"
+            android:textSize="@dimen/loginTextSize"
+            android:drawableLeft="@drawable/ic_india_flag"/>
+
+
+        <application.sample.coffeehouse.Font_OpenSansSemiBoldTextView
+            android:id="@+id/prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingStart="@dimen/drawablePaddingStart"
+            android:textSize="@dimen/loginTextSize"
+            android:text="+91" />
+    </android.support.percent.PercentRelativeLayout>
+
+    <application.sample.coffeehouse.Font_OpenSansItalicTextView
+        android:id="@+id/lblOtpInfo"
+        app:layout_widthPercent="80%"
+        android:layout_height="wrap_content"
+        android:text="@string/otpTextSummary"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="@dimen/otpInfoTextSize"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="3%"
+        android:layout_below="@+id/layoutMobileNo"/>
+
+    <application.sample.coffeehouse.Font_OpenSansSemiBoldButton
+        android:id="@+id/btnGetOtp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblOtpInfo"
+        android:background="@drawable/bg_getotp_button"
+        android:text="Continue"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/loginTextSize"
+        app:layout_marginTopPercent="5%"
+        android:layout_width="wrap_content" />
+
+
+    <application.sample.coffeehouse.Font_MontserratSemiBoldTextView
+        android:id="@+id/lblOrSignInUsing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGetOtp"
+        android:text="OR SIGN IN USING"
+        android:textSize="@dimen/loginTextSize"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        app:layout_marginTopPercent="20%"/>
+
+    <application.sample.coffeehouse.Font_OpenSansSemiBoldButton
+        android:id="@+id/btnFacebookLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/facebook_button_singin"
+        android:layout_below="@+id/lblOrSignInUsing"
+        android:layout_alignLeft="@+id/btnGetOtp"
+        android:text="Facebook"
+        android:onClick="fncFacebookLogin"
+        android:textSize="@dimen/facebookGoogleTextSize"
+        android:textAllCaps="false"
+        app:layout_marginTopPercent="2%"
+        android:textColor="@android:color/white"/>
+
+    <application.sample.coffeehouse.Font_OpenSansSemiBoldButton
+        android:id="@+id/btnGoogleLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/google_signin_button"
+        android:layout_below="@+id/lblOrSignInUsing"
+        android:layout_toRightOf="@+id/btnFacebookLogin"
+        android:text="Google"
+        android:textSize="@dimen/facebookGoogleTextSize"
+        android:onClick="fncGoogleLogin"
+        android:textAllCaps="false"
+        app:layout_marginTopPercent="2%"
+        android:textColor="@android:color/white"/>
+
+
+
+
+</android.support.percent.PercentRelativeLayout>

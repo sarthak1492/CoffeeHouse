@@ -9,6 +9,15 @@
     <dimen name="welcomeTextViewMotoSize">11.25sp</dimen>
     <dimen name="welcomeButtonSize">12.75sp</dimen>
 
+    <!-- Login Screen Activity -->
+    <dimen name="loginTextSize">12sp</dimen>
+    <dimen name="indiaFlagPaddingLeft">15dp</dimen>
+    <dimen name="indiaFlagDrawablePaddingLeft">37.5dp</dimen>
+    <dimen name="drawablePaddingStart">45dp</dimen>
+    <dimen name="nameEditTextPadding">11.25dp</dimen>
+    <dimen name="facebookGoogleTextSize">11.775sp</dimen>
+    <dimen name="otpInfoTextSize">9sp</dimen>
+
     <!-- Menu Screen Activity -->
     <dimen name="menuTextViewSize">15sp</dimen>
     <dimen name="layoutRecyclerViewHeight">97.5dp</dimen>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -18,12 +19,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-        <ImageView
-            android:id="@+id/imgSplashLogo"
-            app:layout_widthPercent="50%"
-            app:layout_heightPercent="20%"
+        <application.sample.coffeehouse.Font_MontserratSemiBoldTextView
+            android:id="@+id/lblTheCoffeeHouse"
+            app:layout_widthPercent="30%"
+            app:layout_heightPercent="40%"
+            android:textSize="18sp"
+            android:background="@drawable/bg_logo_text_white_square"
+            android:text="The \nCoffee House"
+            android:gravity="center"
             android:layout_centerInParent="true"
-            android:background="@drawable/deliveroz_logo" />
+            android:textColor="@android:color/white" />
 
         <me.relex.circleindicator.CircleIndicator
             android:id="@+id/indicator"

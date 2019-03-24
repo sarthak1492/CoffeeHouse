@@ -14,16 +14,22 @@
         android:layout_width="match_parent"
         android:scaleType="fitXY"
         android:alpha="0.9"
+        android:src="@drawable/loginbg"
         android:foreground="@drawable/bg_image_brown_gradient"/>
 
-    <ImageView
-        android:id="@+id/imgSplashLogo"
-        app:layout_widthPercent="90%"
-        app:layout_heightPercent="15%"
+    <application.sample.coffeehouse.Font_MontserratSemiBoldTextView
+        android:id="@+id/lblTheCoffeeHouse"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="20%"
+        android:textSize="18sp"
+        android:background="@drawable/bg_logo_text_white_square"
+        android:text="The \nCoffee House"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        app:layout_marginBottomPercent="12%"
-        android:background="@drawable/deliveroz_logo" />
+        android:gravity="center"
+        app:layout_marginRightPercent="10%"
+        android:textColor="@android:color/white"
+        app:layout_marginBottomPercent="10%" />
 
 
 </android.support.percent.PercentRelativeLayout>

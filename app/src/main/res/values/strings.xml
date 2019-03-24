@@ -15,6 +15,11 @@
     <string name="title_activity_sub_category"></string>
     <string name="title_activity_product_screen"></string>
     <string name="productDescription">A deliciously creamy Coffee Kick Frappe, topped with irresistible whipped cream and indulgent Coffee Drizzle, Perfect Combination.</string>
+    <string name="title_activity_login_screen">LoginScreenActivity</string>
+    <string name="otpTextSummary">A 4-Digit verification Code will be sent via SMS to verify your mobile number</string>
+    <string name="facebook_app_id">1803637259673838</string>
+    <string name="fb_login_protocol_scheme">fb1803637259673838</string>
+
 
 
 </resources>

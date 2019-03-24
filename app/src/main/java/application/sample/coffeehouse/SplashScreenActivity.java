@@ -96,8 +96,8 @@ public class SplashScreenActivity extends AppCompatActivity {
             super.onPostExecute(s);
 
             Picasso.get().load(strImageBg).into(imgSplashBackgound);
-            animation = AnimationUtils.loadAnimation(SplashScreenActivity.this, R.anim.splash_text_animation);
-            imgSplashLogo.startAnimation(animation);
+            //animation = AnimationUtils.loadAnimation(SplashScreenActivity.this, R.anim.splash_text_animation);
+//            imgSplashLogo.startAnimation(animation);
 
             Handler handler = new Handler();
             handler.postDelayed(new Runnable() {
